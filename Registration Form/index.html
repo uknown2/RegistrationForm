@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div id="userform">
+        <form>
+            <table class="formtable">
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputEmail1" class="form-label">Email address :</label></td>
+                        <td><input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputusername" class="form-label">Full Name :</label></td>
+                        <td><input type="text" class="form-control" id="exampleInputUsername1"
+                                aria-describedby="userHelp" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputphone" class="form-label">Phone Number :</label></td>
+                        <td><input type="tel" class="form-control" id="exampleInputphonenumber"
+                                aria-describedby="userHelp" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputAge" class="form-label">Age :</label></td>
+                        <td><input type="number" class="form-control" id="exampleInputAge"
+                                aria-describedby="userHelp" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputAge" class="form-label">Gender :</label></td>
+                        <td><input type="radio" name="Gender" value="Male" class="form-control-gender"
+                                id="exampleInputGender" />
+                            Male
+                            <input type="radio" name="Gender" value="Female" class="form-control-gender"
+                                id="exampleInputGender" />
+                            Female
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputaddress" class="form-label">Address :</label></td>
+                        <td><textarea name="Address" rows="2" cols="3" class="form-control"
+                                id="exampleInputAddress"></textarea>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="mb-3">
+                        <td><label for="exampleInputPassword1" class="form-label">Password :</label></td>
+                        <td><input type="password" class="form-control" id="exampleInputPassword1" /></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn btn-primary" onclick="submitdetail()">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="myjava.js"></script>
+</body>
+</html>
